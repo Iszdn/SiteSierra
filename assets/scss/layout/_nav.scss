@@ -1,0 +1,68 @@
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(239, 188, 239, 0.4);
+    color: white;
+
+    ul {
+        position: relative;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-around;
+        gap: 40px;
+
+        li {
+            &:hover {
+                color: black;
+
+            }
+
+            .submenu {
+                width: 200px;
+                padding: 30px;
+                
+                right: 0;
+                position: absolute;
+                display: none;
+                background-color: black;
+                color: white;
+
+                li {
+                    &:hover {
+                        color: rgb(180, 67, 180);
+                    }
+                }
+            }
+                &:hover .submenu {
+                    display: block;
+                }
+
+            
+        }
+    }
+
+    .fa-bars {
+        display: none;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .navbar {
+        ul.navigation {
+            display: none !important;
+        }
+
+        .fa-bars {
+            display: block;
+            color: black;
+            font-size: 30px;
+        }
+    }
+
+
+}

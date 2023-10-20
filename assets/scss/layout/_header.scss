@@ -1,0 +1,50 @@
+header {
+    background-image: url("https://preview.colorlib.com/theme/sierra/img/home-slider/slider-bg-1.png.webp");
+    height: 100vh;
+
+    .container {
+        .aosEffect {
+            padding-top: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+
+            .content1 {
+                h2 {
+                    font-size: 72px;
+                }
+
+                p {
+                    font-size: 24px;
+                }
+
+                .btn1 {
+                    font-weight: bold;
+                    color: white;
+                    margin: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 162px;
+                    height: 67px;
+                    border: 6px solid rgba(204, 241, 255, 0.5);
+                    border-radius: 33px;
+                    background-image: linear-gradient(to right, #6fbcfe 0%, #998dff 51%, #6fbcfe 100%);
+                   
+                }
+                .btn1:hover{
+                    background-image: linear-gradient(to right, #6fbcfe 100%, #998dff 51%, #6fbcfe 0%);
+                }
+
+            }
+        }
+    }
+}
+@media screen and (max-width:992px){
+    .aosEffect {
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+    }
+}
